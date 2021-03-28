@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./c3/c3.min.css">
+</head>
+
+<body id="body">
+    <nav class="navbar" id="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Dashboard</span></a></div>
+            <ul class="menu">
+                <li><a href="#" class="">Moneda FIAT</a></li>
+                <li><a href="#" class="">Moneda PAR</a></li>
+                <li><a href="#" class="">Usuario</a></li>
+                <li><a href="#" class="">ES/EN</a></li>
+                <li><a href="#" onclick="lightDark(innerHTML)" id="nocheDia" class="">Noche</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="left-navbar" id="left-navbar">
+        <div class="left-menu">
+            <a href="#"> <i class="fas fa-bars"></i></a>
+        </div>
+        <div class="left-menu">
+            <a href=""> <i class="fas fa-euro-sign"></i></a>
+        </div>
+        <div class="left-menu">
+            <a href=""><i class="fas fa-balance-scale"></i></a>
+        </div>
+        <div class="left-menu">
+            <a href=""><i class="fas fa-donate"></i></a>
+        </div>
+        <div class="left-menu">
+            <a href=""><i class="fas fa-hand-holding-usd"></i></a>
+        </div>
+    </nav>
+    <section class="canvas">
+        <section class="resume">
+            <div class="neto">
+                <p>Importe Neto</p>
+                <p><span>12.520€</span></p>
+            </div>
+            <div class="total">
+                <p>Variación ganancias / pérdidas</p>
+                <p><span>+21,4%</span></p>
+            </div>
+            <div class="worth">
+                <p>Balance actual</p>
+                <p><span>15.199,28€</span></p>
+            </div>
+            <div class="long">
+                <p>Ult. 24h / Mes / Año</p>
+                <p><span>-1,1% / +4,1% / +18,4%</span></p>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div id="portfolio-chart"></div>
+        </section>
+        <section class="chart">
+            <div id="monthly-chart"></div>
+        </section>
+        <section class="live">
+            <div id="live-chart"></div>
+        </section>
+        <section class="prices">
+            <div class="title">
+                <h2>Activos</h2>
+            </div>
+            <div class="active-data">
+                <ul id="activos">
+
+                </ul>
+            </div>
+        </section>
+    </section>
+    <script src="./jquery/jquery.js" defer></script>
+    <script src="./jquery/fontawesome.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./c3/c3.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

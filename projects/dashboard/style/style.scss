@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+@import "./scroll";
+$primaryColor: indianred;
+$primaryBg: rgb(250, 249, 250);
+$navBg: #fff;
+$fontColor: #222;
+
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: $primaryBg;
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background: $navBg;
+    outline: 2px solid rgba(133, 133, 133, 0.1);
+
+    .max-width {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo a {
+        color: $primaryColor;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 800;
+        transition: all 0.6s ease;
+        margin-left: 20px;
+    }
+
+    .menu li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .menu li a {
+        display: block;
+        text-decoration: none;
+        color: $fontColor;
+        font-size: 0.6rem;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .menu li a:hover,
+    .menu li a:focus {
+        color: $primaryColor;
+    }
+
+    .menu li a:hover,
+    .navbar .menu li a:focus {
+        color: $primaryColor;
+    }
+
+    .logo a:hover,
+    .navbar .logo a:focus {
+        font-size: 2.05rem;
+    }
+}
+
+
+/* left navbar */
+.left-navbar {
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    background: $navBg;
+    outline: 2px solid rgba(133, 133, 133, 0.1);
+
+    .left-menu a {
+        display: block;
+        color: $fontColor;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        transition: color 0.3s ease;
+        padding: 20px 20px;
+    }
+
+    .left-menu a:hover,
+    .left-menu a:focus {
+        background: $primaryColor;
+    }
+}
+
+/* canvas */
+.canvas {
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin-left: 70px;
+    margin-top: 42px;
+
+    /* resume */
+    .resume {
+        position: fixed;
+        border-top-left-radius: 10px;
+        width: 70%;
+        height: 20%;
+        color: $fontColor;
+        font-weight: 500;
+        font-size: 1.2vw;
+        text-align: center;
+
+        div {
+            display: inline-block;
+            border: 1px;
+            max-width: 20vw;
+            padding: 10px;
+            padding-top: 40px;
+        }
+    }
+
+    /* portfolio */
+    .portfolio {
+        position: fixed;
+        width: 35%;
+        height: 40%;
+        margin-top: 20vh;
+        padding: 0px;
+    }
+
+    /* chart */
+    .chart {
+        position: fixed;
+        z-index: 99;
+        width: 35%;
+        height: 40%;
+        margin-top: 20vh;
+        margin-left: 35%;
+        padding: 0px;
+    }
+
+    /* live chart */
+    .live {
+        position: fixed;
+        z-index: 99;
+        width: 70%;
+        height: 40%;
+        margin-top: 60vh;
+        padding: 0px;
+    }
+
+    /* prices live */
+    .prices {
+        position: fixed;
+        z-index: 10;
+        width: 26%;
+        height: 100%;
+        right: 0;
+        text-align: center;
+        overflow-y: auto;
+
+        h2 {
+            display: inline-block;
+            border: 1px;
+            border-radius: 30px;
+            max-width: 280px;
+            padding-top: 20px;
+            margin-bottom: -20px;
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        .active-data {
+            display: block;
+            margin-left: 20px;
+            text-align: left;
+            color: $fontColor;
+            text-decoration: none;
+            transition: all 0.1s ease;
+
+            li {
+                text-decoration: none;
+                list-style: none;
+                text-align: left;
+                margin-left: 30px;
+                font-size: 1vw;
+                font-weight: 500;
+                color: $fontColor;
+                padding: 2px;
+                cursor: pointer;
+                transition: all 0.6s ease;
+                letter-spacing: 0.05vw;
+            }
+
+            li:hover,
+            li:focus {
+                font-size: 1.2vw;
+            }
+        }
+    }
+}

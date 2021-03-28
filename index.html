@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGRDesarrollo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <!-- Fuentes -->
+    <script src="./projects/dashboard/jquery/fontawesome.js" defer></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- typed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- OwlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- OwlCarousel2 Styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <!-- Scroll up button -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#home">MGR<span class="typing-logo"></span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">Sobre mi</a></li>
+                <li><a href="./projects/portfolio.html" class="menu-btn">Portfolio</a></li>
+                <li><a href="#services" class="menu-btn">Servicios</a></li>
+                <li><a href="#skills" class="menu-btn">Habilidades</a></li>
+                <li><a href="#teams" class="menu-btn">Equipo</a></li>
+                <li><a href="#contact" class="menu-btn">Contacto</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- bottom nav -->
+    <nav class="bottom-navbar show">
+        <div class="max-width">
+            <ul class="menu">
+                <li><a href="#about" class="bottom-btn">Sobre mi</a></li>
+                <li><a href="#skills" class="bottom-btn">Portfolio</a></li>
+                <li><a href="#contact" class="bottom-btn">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Construimos tu futuro</div>
+                <div class="text-2">Manuel Garre Ros</div>
+                <div class="text-3">Soy <span class="typing"></span></div>
+                <a href="#contact">Contacto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Sobre mi</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/profile1.png" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Soy Manuel Garre Ros y soy <span class="typing-2"></span></div>
+                    <p>Soy una persona emprendedora, que adora los retos y no se rinde fácilmente. Muy detallista y
+                        autodidacta cada día, nunca dejo de aprender y tengo un especial don de gentes.</p>
+                    <a href="./Documents/ManuelGarre-cv.pdf" download>Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- servicios -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Servicios</h2>
+            <div class="services-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Diseño Web</div>
+                        <p>Maquetación, configuración de colores, animaciones. Consigue tu propia web con un diseño
+                            atractivo.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Educación Financiera</div>
+                        <p>Educación personalizada para mejorar tu economía familiar, conseguir tus objetivos y aumentar
+                            tus ahorros.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Programador web</div>
+                        <p>Programación web basada en JavaScript, mejora tu productividad con los diferentes productos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- habilidades -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Habilidades</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Mis habilidades y experiencia</div>
+                    <p>Ingeniero técnico Informatico especializado en el diseño y desarrollo web, formado en la
+                        Universidad de Murcia.<br>
+                        Tengo experiencia en el ambito empresarial donde he gestionado diferentes modelos de negocio y
+                        proyectos de toda indole.<br>
+                        Mi meta es acercar la web y la economia familiar a aquellos que lo necesitan, consiguiendo
+                        mejorar sus finanzas y la visibilidad de sus negocios.<br>
+                    </p>
+                    <a href="./projects/portfolio.html">Portfolio</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- team section -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Personas</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile1.png" alt="">
+                        <div class="text">Manuel Garre</div>
+                        <p>Diseñador, Desarrollador WEB, Educacor financiero</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile2.jpg" alt="">
+                        <div class="text">Saku Férez</div>
+                        <p>Diseñadora, Asesora creativa</p>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="box">
+                        <img src="images/profile3.jpg" alt="">
+                        <div class="text">Kailani Garre</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem!</p>
+                    </div>
+                </div> -->
+                <div class="card">
+                    <div class="box">
+                        <img src="images/pablo.jfif" alt="">
+                        <div class="text">Pablo Rodrígez</div>
+                        <p>CEO Inertic Industries, mentor y consejero</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/javi.jfif" alt="">
+                        <div class="text">Javier Ferrer</div>
+                        <p>Ingeniero CERN, mentor y consejero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contacto</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Ponte en contacto</div>
+                    <p>Vamos a hablar sobre tus proyectos o ideas para darles vida.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Nombre</div>
+                                <div class="sub-title">Manuel Garre Ros</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Dirección</div>
+                                <div class="sub-title">Murcia, España</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">manuel@mgrdesarrollo.es</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Escríbeme</div>
+                    <form id="form" method="POST" action="mailer.php">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Nombre" name="name" id="name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="text" placeholder="Email" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Asunto" name="subject" id="subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" id="message" placeholder="Describe el proyecto..."
+                                required></textarea>
+                            <label id="loader"></label>
+                            <label id="info"></label>
+                        </div>
+                        <div class="button">
+                            <button type="submit" name="submit" id="submit">Enviar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <span>Diseñada por <a href="#">MGRDesarrollo</a> | <span class="far fa-copyright"></span>2020 All rights
+            reserved.</span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background: rgb(250, 249, 250);
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background: #fff;
+    outline: 2px solid rgba(133, 133, 133, 0.1);
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: indianred;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    transition: all 0.6s ease;
+    margin-left: 20px;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar .menu li a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    font-size: 0.6rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover,
+.navbar .menu li a:focus
+{
+    color: indianred;
+}
+.navbar .logo a:hover,
+.navbar .logo a:focus {
+    font-size: 2.05rem;
+}
+
+/* left navbar */
+.left-navbar{
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    background: #fff;
+    outline: 2px solid rgba(133, 133, 133, 0.1);
+}
+.left-navbar .left-menu a{
+    display: block;
+    color: #222;    
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    transition: color 0.3s ease;
+    padding: 20px 20px;
+}
+.left-navbar .left-menu a:hover,
+.left-navbar .left-menu a:focus{
+    background: indianred;
+}
+/* canvas */
+.canvas{
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin-left: 70px;
+    margin-top: 42px;
+}
+
+/* resume */
+.canvas .resume{
+    position: fixed;
+    border-top-left-radius: 10px;
+    width: 70%;
+    height: 20%;
+    color: #222;
+    font-weight: 500;
+    font-size: 1.2vw;
+    text-align: center;
+}
+.canvas .resume div{
+    display: inline-block;
+    border: 1px;
+    max-width: 20vw;
+    padding: 10px;
+    padding-top: 40px;
+}
+/* portfolio */
+.canvas .portfolio{
+    position: fixed;
+    width: 35%;
+    height: 40%;
+    margin-top: 20vh;
+    padding: 0px;
+}
+/* chart */
+.canvas .chart{
+    position: fixed;
+    z-index: 99;
+    width: 35%;
+    height: 40%;
+    margin-top: 20vh;
+    margin-left: 35%;
+    padding: 0px;
+}
+/* live chart */
+.canvas .live{
+    position: fixed;
+    z-index: 99;
+    width: 70%;
+    height: 40%;
+    margin-top: 60vh;
+    padding: 0px;
+}
+/* prices live */
+.canvas .prices{
+    position: fixed;
+    z-index: 10;
+    width: 26%;
+    height: 100%;
+    right: 0;
+    text-align: center;
+    overflow-y: auto; 
+}
+.canvas .prices h2{
+    display: inline-block;
+    border: 1px;
+    border-radius: 30px;
+    max-width: 280px;
+    padding-top: 20px;
+    margin-bottom: -20px;
+    font-size: 2vw;
+    text-align: center;
+}
+.canvas .prices .active-data{
+    display: block;
+    margin-left: 20px;
+    text-align: left;
+    color: #222;
+    text-decoration: none; 
+    transition: all 0.1s ease; 
+}
+.canvas .prices .active-data li{
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 1vw;
+    font-weight: 500;
+    color: #222;
+    padding: 2px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    letter-spacing: 0.05vw;
+}
+.canvas .prices .active-data li:hover,
+.canvas .prices .active-data li:focus{
+    font-size: 1.2vw;
+}
+/* scroll bar */
+.canvas .prices::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.canvas .prices::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.canvas .prices::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+.canvas .prices::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.canvas .prices::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+.canvas .prices::-webkit-scrollbar-track:hover,
+.canvas .prices::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}

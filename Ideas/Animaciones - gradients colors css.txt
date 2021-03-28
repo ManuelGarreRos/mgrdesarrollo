@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=f3mwKLXpOLk
+
+Para usar degradados en css
+
+Fondos animados con css
+	- Playa con olas que suben y bajan
